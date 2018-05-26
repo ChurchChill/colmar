@@ -1,0 +1,199 @@
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  padding: 15px 0px 10px 24px;
+}
+
+.logo {
+  display: flex;
+  height: 2rem;
+}
+
+.logo img {
+  height: 4rem;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  padding-top: .625rem;
+  font-family: Ubuntu, sans-serif;
+}
+
+.menu a {
+  font-family: Helvetica, sans-serif
+}
+
+.colmar {
+  font-weight: bold;
+  color: #4D4D4D
+}
+
+.academy {
+  color: grey;
+}
+
+header .menu {
+  display: flex;
+}
+
+header .menu a {
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  color: black;
+  text-decoration: none;
+  padding-top: .625rem;
+
+}
+
+header .menu a:hover {
+  color: grey;
+  transition-duration: .2s
+   }
+
+.learn {
+  background-color: lightgrey
+}
+
+.learn .motto {
+  display: flex;
+}
+
+.learn img {
+  width: 60%;
+  height: 60%;
+  margin-left: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.learn .learnnew {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+}
+
+.learnnew h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #464646;
+  padding-bottom: 2rem;
+}
+
+.learnnew h2 {
+  font-size: 2.25rem;
+  color: #464646;
+  padding-bottom: 2rem;
+  font-weight: 600;
+}
+
+.learnnew a {
+  font-size: 2rem;
+  color:white;
+  background-color: #464646;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+}
+
+.learnnew a:hover {
+  background-color: black;
+}
+
+.second {
+  display: flex;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+}
+
+.practicing {
+  width: 60%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.practicing img {
+  width: 100%;
+}
+
+.practicing h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  padding-top: 2rem;
+  color: #464646;
+}
+.practicing h2 {
+  font-size: 1.5rem;
+  color: #464646;
+  padding-top: 2rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+}
+
+.practicing h3 {
+  font-family: Helvetica, sans-serif;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.right .info {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.ourthing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  color: #464646;
+}
+
+.lecture {
+  background-color: lightgrey
+}
+
+.ourthing h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.ourthing h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  line-height: 2.3rem;
+}
+
+.ourthing a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #3aaffc;
+}
