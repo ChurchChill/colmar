@@ -1,6 +1,7 @@
 
 html {
   font-size: 16px;
+  color: #464646;
 }
 
 body {
@@ -19,6 +20,7 @@ header {
   height: 64px;
   padding: 15px 0px 10px 24px;
 }
+
 
 .logo {
   display: flex;
@@ -66,6 +68,22 @@ header .menu a:hover {
   transition-duration: .2s
    }
 
+.mobilelogo {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  .logo h1{
+    display: none
+  }
+  header .menu {
+    display: none
+  }
+  .mobilelogo {
+    display: flex;
+  }
+   }
+
 .learn {
   background-color: lightgrey
 }
@@ -92,13 +110,11 @@ header .menu a:hover {
 .learnnew h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #464646;
   padding-bottom: 2rem;
 }
 
 .learnnew h2 {
   font-size: 2.25rem;
-  color: #464646;
   padding-bottom: 2rem;
   font-weight: 600;
 }
@@ -138,11 +154,9 @@ header .menu a:hover {
   font-size: 3.5rem;
   font-weight: 900;
   padding-top: 2rem;
-  color: #464646;
 }
 .practicing h2 {
   font-size: 1.5rem;
-  color: #464646;
   padding-top: 2rem;
   font-weight: 400;
   line-height: 2.3rem;
@@ -171,7 +185,6 @@ header .menu a:hover {
   flex-direction: column;
   justify-content: center;
   padding-left: 2rem;
-  color: #464646;
 }
 
 .lecture {
@@ -196,4 +209,164 @@ header .menu a:hover {
   font-weight: 400;
   text-decoration: none;
   color: #3aaffc;
+}
+
+.learning {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #F1F1F1;
+}
+
+.learning .title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.learning .courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+
+
+}
+
+.learning .courses img {
+  height: auto;
+}
+
+.learning .courses .class {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.learning .courses .first {
+  display: flex;
+}
+
+
+.learning .courses .class:not(:first-child){
+  margin-left: 2rem;
+}
+
+.learning .courses .second {
+  display: flex;
+}
+
+.class .text {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.learning .courses .class h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.learning .courses .class h2 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #6e6d6c;
+}
+
+.learning .courses .class h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #6e6d6c;
+  padding-top: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.thesis .title{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.thesis .exhibit {
+  display: flex;
+  justify-content: space-around;
+}
+
+.thesis .video {
+  width: 60%;
+  margin-left: 1.5rem;
+}
+
+.thesis .video h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  padding-top: 2rem;
+}
+
+.thesis .video h2 {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+}
+
+.thesis .second {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding-left: 2rem;
+  width: 40%;
+}
+
+.thesis .second .section {
+  display: flex;
+  padding: 2rem;
+
+}
+
+.thesis .second .section img {
+  width: 35%;
+  height: 35%;
+}
+
+.thesis .second .section .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+}
+
+.thesis .second .section h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.thesis .second .section h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  line-height: 2.3rem;
+}
+
+.fisma {
+  background-color: lightgrey
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  margin-top: 3rem;
+  border-top: solid;
+  border-color: lightgrey;
+}
+
+footer h1 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
