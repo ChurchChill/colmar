@@ -72,15 +72,21 @@ header .menu a:hover {
   display: none;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 480px) {
   .logo h1{
     display: none
   }
   header .menu {
     display: none
   }
+  .logo {
+   width: 100%;
+  }
   .mobilelogo {
     display: flex;
+  }
+  .logo img {
+    padding-left: 2rem;
   }
    }
 
@@ -131,6 +137,26 @@ header .menu a:hover {
 
 .learnnew a:hover {
   background-color: black;
+}
+
+@media only screen and (max-width: 480px) {
+  .learn .motto {
+    display: flex;
+    flex-direction: column;
+    margin: 0, auto;
+    padding: 0, auto;
+  }
+
+  .learn .motto img{
+    width: 100%;
+    margin: 0
+  }
+
+  .learn .learnnew {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-right: 4rem;
+  }
 }
 
 .second {
@@ -211,6 +237,34 @@ header .menu a:hover {
   color: #3aaffc;
 }
 
+@media only screen and (max-width: 480px) {
+  .practicing {
+    display: none;
+  }
+
+  .right .info {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 2rem;
+    margin-right: 2rem;
+
+  }
+
+  .right .info img {
+    height: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+
+  }
+
+  .lecture {
+    background-color: white;
+  }
+}
+
 .learning {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -226,22 +280,20 @@ header .menu a:hover {
 
 .learning .courses {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: auto;
-
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: static;
 
 }
 
-.learning .courses img {
-  height: auto;
-}
 
 .learning .courses .class {
   display: flex;
   flex-direction: column;
   background-color: white;
+  width: 30%;
 }
+
 
 .learning .courses .first {
   display: flex;
@@ -279,6 +331,30 @@ header .menu a:hover {
   color: #6e6d6c;
   padding-top: 1.5rem;
   line-height: 2.5rem;
+}
+
+.coursesmobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .learning .courses {
+    display: none
+  }
+  .coursesmobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .coursesmobile h1{
+    font-size: 2.25rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    background-color: lightgrey;
+    padding: 2rem 0rem 2rem 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
 }
 
 .thesis .title{
@@ -355,6 +431,28 @@ header .menu a:hover {
   background-color: lightgrey
 }
 
+@media only screen and (max-width: 480px) {
+  .thesis .video h1{
+    display: none
+  }
+  .thesis .video h2{
+    display: none
+  }
+
+  .thesis .second {
+    display: none;
+  }
+
+  .thesis .video {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-top: solid;
+    border-color: lightgrey
+  }
+
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -369,4 +467,20 @@ footer {
 footer h1 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+footer h2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+
+  footer {
+    margin: 0;
+  }
+
+  footer h2 {
+    display: none;
+  }
 }
